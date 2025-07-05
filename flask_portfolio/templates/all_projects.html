@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="projects-section">
+    <div class="projects-header">
+        <h2>All Projects</h2>
+        <div class="projects-underline"></div>
+        <p class="projects-desc">Browse all my data science, machine learning, and AI projects. Click on any project to see more details, images, and links.</p>
+    </div>
+    <div class="projects-grid">
+        <!-- Example project cards, replace with your real projects -->
+        <a href="/project/1" class="project-card border-blue" style="text-decoration:none;">
+            <div class="project-title">Customer Segmentation Analysis</div>
+            <div class="project-badge badge-blue">Machine Learning</div>
+            <div class="project-desc">K-means clustering to segment customers based on purchasing behavior.</div>
+            <div class="project-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+            </div>
+        </a>
+        <a href="/project/2" class="project-card border-purple" style="text-decoration:none;">
+            <div class="project-title">Sales Forecasting Model</div>
+            <div class="project-badge badge-purple">Deep Learning</div>
+            <div class="project-desc">LSTM neural network for time series sales prediction.</div>
+            <div class="project-tags">
+                <span>Python</span><span>TensorFlow</span><span>NumPy</span>
+            </div>
+        </a>
+        <a href="/project/3" class="project-card border-green" style="text-decoration:none;">
+            <div class="project-title">Data Visualization Dashboard</div>
+            <div class="project-badge badge-green">Data Analysis</div>
+            <div class="project-desc">Interactive dashboard for business intelligence using real-world datasets.</div>
+            <div class="project-tags">
+                <span>Python</span><span>Plotly</span><span>Streamlit</span>
+            </div>
+        </a>
+        <a href="/project/4" class="project-card border-orange" style="text-decoration:none;">
+            <div class="project-title">Sentiment Analysis System</div>
+            <div class="project-badge badge-orange">NLP</div>
+            <div class="project-desc">Analyze customer reviews and social media sentiment using transformer models.</div>
+            <div class="project-tags">
+                <span>Python</span><span>NLTK</span><span>Transformers</span>
+            </div>
+        </a>
+    </div>
+</section>
+{% endblock %} 

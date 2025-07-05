@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="projects-section" style="min-height:70vh;">
+    <div class="projects-header">
+        <h2>Project Title (Project {{ project_id }})</h2>
+        <div class="projects-underline"></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:2.5rem;max-width:1100px;margin:0 auto;align-items:flex-start;">
+        <div style="flex:1 1 350px;min-width:320px;max-width:500px;">
+            <img src="/static/project{{ project_id }}.jpg" alt="Project Image" style="width:100%;border-radius:1rem;box-shadow:0 2px 12px rgba(30,41,59,0.10);margin-bottom:1.5rem;object-fit:cover;">
+            <div style="margin-bottom:1.2rem;">
+                <strong>Description:</strong>
+                <p>This is a placeholder description for Project {{ project_id }}. Replace with your real project details.</p>
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <strong>Problem Statement:</strong>
+                <p>Describe the problem this project solves.</p>
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <strong>Approach:</strong>
+                <p>Explain how you approached the solution, including any data science, ML, or AI techniques used.</p>
+            </div>
+        </div>
+        <div style="flex:1 1 320px;min-width:280px;max-width:500px;display:flex;flex-direction:column;gap:1.2rem;">
+            <div>
+                <a href="#" class="btn btn-primary" style="margin-bottom:0.7rem;">GitHub Project</a>
+                <a href="#" class="btn btn-outline" style="margin-bottom:0.7rem;">Live Demo</a>
+                <a href="/all-projects" class="btn btn-outline">Back to All Projects</a>
+            </div>
+            <div style="margin-top:2rem;">
+                <strong>Tags:</strong>
+                <span class="project-tags"><span>Python</span><span>ML</span><span>AI</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
